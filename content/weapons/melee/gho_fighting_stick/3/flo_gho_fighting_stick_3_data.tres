@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://items/global/weapon_data.gd" type="Script" id=1]
+[ext_resource path="res://items/sets/ethereal/ethereal_set_data.tres" type="Resource" id=2]
+[ext_resource path="res://items/sets/medieval/medieval_set_data.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/gho_fighting_stick/gho_sward_icon.png" type="Texture" id=4]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/gho_fighting_stick/3/flo_gho_fighting_stick_3_stats.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/gho_fighting_stick/4/flo_gho_fighting_stick_4_data.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/gho_fighting_stick/flo_gho_fighting_stick.tscn" type="PackedScene" id=7]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/gho_fighting_stick/3/flo_gho_f_stick_effect.tres" type="Resource" id=8]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "weapon_flo_glo_fighting_stick_3"
+unlocked_by_default = true
+icon = ExtResource( 4 )
+name = "WEAPON_FLO_GHO_FIGHTING_STICK"
+tier = 2
+value = 68
+effects = [ ExtResource( 8 ) ]
+tracking_text = "stats_gained"
+weapon_id = "weapon_flo_glo_fighting_stick_1"
+type = 0
+sets = [ ExtResource( 3 ), ExtResource( 2 ) ]
+scene = ExtResource( 7 )
+stats = ExtResource( 5 )
+upgrades_into = ExtResource( 6 )

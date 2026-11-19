@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=9 format=2]
+
+[ext_resource path="res://items/global/weapon_data.gd" type="Script" id=1]
+[ext_resource path="res://items/sets/gun/gun_set_data.tres" type="Resource" id=2]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/flo_gho_pistol/flo_gho_pistol_icon.png" type="Texture" id=3]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/flo_gho_pistol/4/flo_gho_pistol_4_data.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/flo_gho_pistol/3/flo_gho_pistol_3_stats.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/flo_gho_pistol/flo_gho_pistol.tscn" type="PackedScene" id=6]
+[ext_resource path="res://items/sets/ethereal/ethereal_set_data.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/flo_gho_pistol/3/flo_gho_pistol_3_effect.tres" type="Resource" id=8]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "weapon_flo_gho_pistol_3"
+unlocked_by_default = true
+icon = ExtResource( 3 )
+name = "WEAPON_FLO_GHO_PISTOL"
+tier = 2
+value = 50
+effects = [ ExtResource( 8 ) ]
+tracking_text = "stats_gained"
+weapon_id = "weapon_flo_gho_pistol"
+type = 1
+sets = [ ExtResource( 2 ), ExtResource( 7 ) ]
+scene = ExtResource( 6 )
+stats = ExtResource( 5 )
+upgrades_into = ExtResource( 4 )

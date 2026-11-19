@@ -1,0 +1,35 @@
+name: Package mod
+
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install Godot 3.6.2 headless editor
+        working-directory: ${{ runner.temp }}
+        run: |
+          curl --fail --silent --show-error --location --retry 3 -o godot.zip \
+            https://github.com/godotengine/godot-builds/releases/download/3.6.2-stable/Godot_v3.6.2-stable_linux_headless.64.zip
+          echo '6590e8fe75695dfb1b70b45856116733aa484336b820c75082b7f7c645ca8259  godot.zip' | sha256sum --check
+          unzip -q godot.zip
+          chmod +x Godot_v3.6.2-stable_linux_headless.64
+
+      - name: Import assets and build the mod ZIP
+        run: |
+          python3 .github/packaging/build.py \
+            "$RUNNER_TEMP/Godot_v3.6.2-stable_linux_headless.64" \
+            "$RUNNER_TEMP/Brotato-MoreGhostExpansionPack.zip"
+
+      - name: Upload installable ZIP
+        uses: actions/upload-artifact@v7
+        with:
+          path: ${{ runner.temp }}/Brotato-MoreGhostExpansionPack.zip
+          archive: false
+          if-no-files-found: error

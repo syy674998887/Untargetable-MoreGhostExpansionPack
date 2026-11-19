@@ -1,0 +1,7 @@
+config_version=4
+
+[application]
+config/name="Mod asset import"
+
+[rendering]
+quality/driver/driver_name="GLES2"

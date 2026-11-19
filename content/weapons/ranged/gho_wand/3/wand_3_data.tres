@@ -1,0 +1,26 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://items/global/weapon_data.gd" type="Script" id=1]
+[ext_resource path="res://items/sets/ethereal/ethereal_set_data.tres" type="Resource" id=2]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/gho_wand/3/wand_3_stats.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/gho_wand/3/flo_gho_wand_effect.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/gho_wand/4/wand_4_data.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/gho_wand/gho_wand_icon.png" type="Texture" id=6]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/gho_wand/g_wand.tscn" type="PackedScene" id=7]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "weapon_gho_wand_3"
+unlocked_by_default = true
+icon = ExtResource( 6 )
+name = "WEAPON_GHO_WAND"
+tier = 2
+value = 63
+effects = [ ExtResource( 4 ) ]
+tracking_text = "stats_gained"
+weapon_id = "weapon_gho_wand"
+type = 1
+sets = [ ExtResource( 2 ) ]
+scene = ExtResource( 7 )
+stats = ExtResource( 3 )
+upgrades_into = ExtResource( 5 )

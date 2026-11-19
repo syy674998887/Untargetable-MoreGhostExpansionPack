@@ -1,0 +1,28 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://items/sets/ethereal/ethereal_set_data.tres" type="Resource" id=1]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ghost_weapon_data.gd" type="Script" id=2]
+[ext_resource path="res://weapons/ranged/crossbow/2/crossbow_effect_2.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/crossbow/3/crossbow_data_3.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/crossbow/2/ghost_scepter_effect.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/crossbow/crossbow.tscn" type="PackedScene" id=6]
+[ext_resource path="res://items/sets/precise/precise_set_data.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/crossbow/2/crossbow_stats_2.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ranged/crossbow/gho_bow_icon.png" type="Texture" id=9]
+
+[resource]
+script = ExtResource( 2 )
+my_id = "weapon_ghosbow_2"
+unlocked_by_default = true
+icon = ExtResource( 9 )
+name = "WEAPON_GHOSBOW"
+tier = 1
+value = 39
+effects = [ ExtResource( 3 ), ExtResource( 5 ) ]
+tracking_text = "stats_gained"
+weapon_id = "weapon_ghobow"
+type = 1
+sets = [ ExtResource( 7 ), ExtResource( 1 ) ]
+scene = ExtResource( 6 )
+stats = ExtResource( 8 )
+upgrades_into = ExtResource( 4 )

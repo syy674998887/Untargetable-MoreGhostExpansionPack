@@ -1,0 +1,25 @@
+[gd_resource type="Resource" load_steps=8 format=2]
+
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/ghost_weapon_data.gd" type="Script" id=1]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/flo_gho_trident/4/flo_gho_trident_4_stats.tres" type="Resource" id=2]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/flo_gho_trident/4/flo_gho_trident_4_effect.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/flo_gho_trident/flo_gho_trident.tscn" type="PackedScene" id=4]
+[ext_resource path="res://items/sets/primitive/primitive_set_data.tres" type="Resource" id=5]
+[ext_resource path="res://items/sets/ethereal/ethereal_set_data.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/Brotato-MoreGhostWeaponsFixed/content/weapons/melee/flo_gho_trident/flo_gho_trident_icon.png" type="Texture" id=7]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "weapon_flo_gho_trident_4"
+unlocked_by_default = true
+icon = ExtResource( 7 )
+name = "WEAPON_flo_gho_trident"
+tier = 3
+value = 149
+effects = [ ExtResource( 3 ) ]
+tracking_text = "stats_gained"
+weapon_id = "weapon_flo_gho_trident"
+type = 0
+sets = [ ExtResource( 5 ), ExtResource( 6 ) ]
+scene = ExtResource( 4 )
+stats = ExtResource( 2 )

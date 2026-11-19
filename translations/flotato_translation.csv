@@ -1,0 +1,16 @@
+,zh,en
+FLOTATO_MATERIALS,材料,Materials
+WEAPON_FLO_GHO_PRUNER,幽魂修剪,Ghost Pruner
+WEAPON_FLO_GHO_PISTOL,幽魂手枪,Ghost Pistol
+WEAPON_FLO_GHO_SPIKY_SHIELD,幽魂盾,Ghost Shield
+WEAPON_FLO_GHO_WRENCH,幽魂扳手,Ghost Wrench
+WEAPON_flo_gho_trident,幽魂三叉戟,Ghost Trident
+WEAPON_FLO_GHO_FIGHTING_STICK,幽魂剑,Ghost Sword
+WEAPON_FLO_GHO_BOW,幽魂弓,Ghost Bow
+WEAPON_GHO_JOUSTING_LANCE,幽魂长枪,Ghost Jousting Lance
+WEAPON_GHOSBOW,幽魂弓,Ghost Bow
+WEAPON_GHO_ROCKET_LAUNCHER,幽魂火箭发射器,Ghost Rocket Launcher
+WEAPON_GHO_TASER,幽魂电击枪,Ghost Taser
+WEAPON_GHO_WAND,幽魂魔杖,Ghost Wand
+EFFECT_TURRET_GAIN_STAT_EVERY_KILLED_ENEMIES,炮塔每击杀{2}名敌人便会+{0}{1},Turrets gain +{0} {1} for every {2} enemies killed
+EFFECT_EXTRA_TURRET_ENGINEERING,来自炮塔的属性: {0},Stats from turrets: {0}

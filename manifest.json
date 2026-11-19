@@ -1,0 +1,21 @@
+{
+	"name": "MoreGhostWeaponsFixed",
+	"namespace": "Brotato",
+	"version_number": "1.1.5",
+	"description": "幽魂武器扩展包修复 More Ghost Weapons Fixed",
+	"website_url": "",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"authors": [
+				"Flowers",
+				"Mengbao",
+				"Untargetable",
+				"Yoko"
+			],
+			"compatible_mod_loader_version": ["6.3.0"],
+			"compatible_game_version": ["1.2.0.0", "1.2.0.1", "1.2.0.4.beta-1"]
+		}
+	}
+}
