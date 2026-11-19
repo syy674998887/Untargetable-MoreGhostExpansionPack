@@ -1,6 +1,6 @@
 extends Node
 
-const MOD_NAME = "Brotato-MoreGhostWeaponsFixed"
+const MOD_NAME = "Brotato-MoreGhostExpansionPack"
 var mod_dir: String
 
 
