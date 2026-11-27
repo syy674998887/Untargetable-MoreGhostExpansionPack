@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=9 format=2]
 
 [ext_resource path="res://items/global/custom_arg.gd" type="Script" id=1]
-[ext_resource path="res://mods-unpacked/Yoko-YzTato/extensions/effects/gain_stat_when_killed_single_scaling/gain_stat_when_killed_single_scaling_effect.gd" type="Script" id=2]
+[ext_resource path="res://mods-unpacked/Untargetable-MoreGhostExpansionPack/extensions/effects/gain_stat_when_killed_single_scaling_effect.gd" type="Script" id=2]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 1 )
@@ -53,8 +53,8 @@ arg_key = ""
 
 [resource]
 script = ExtResource( 2 )
-key = "yztato_gain_stat_when_killed_single_scaling"
-text_key = "EFFECT_YZTATO_GAIN_STAT_WHEN_KILLED_SINGLE_SCALING"
+key = "mgep_gain_stat_when_killed_single_scaling"
+text_key = "EFFECT_MGEP_GAIN_STAT_WHEN_KILLED_SINGLE_SCALING"
 value = 150
 custom_key = ""
 storage_method = 0

@@ -18,7 +18,14 @@ func _init():
 func install_script_extensions() -> void:
 	var extensions: Array = [
 		"turret.gd",
-		"player_explosion.gd"
+		"player_explosion.gd",
+		# EFFECTS: gain_stat_when_killed_single_scaling
+		"player_run_data.gd",
+		"utils.gd",
+		"weapon_service.gd",
+		"entity_spawner.gd",
+		"melee_weapon.gd",
+		"ranged_weapon.gd"
 	]
 
 	for path in extensions:

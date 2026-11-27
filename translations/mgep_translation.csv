@@ -12,3 +12,17 @@ WEAPON_MGEP_GHOST_ROCKET_LAUNCHER,"Ghost Rocket Launcher","Lance-Roquettes Fant�
 WEAPON_MGEP_GHOST_TASER,"Ghost Taser","Taser Fantôme","幽魂电击枪","ゴーストテイザー","유령 테이저","幽魂電擊槍","Призрачный тазер","Duchowy Paralizator","Táser Fantasma","Taser Fantasma","Geistertaser","Hayalet Taser","Taser Fantasma"
 WEAPON_MGEP_GHOST_WAND,"Ghost Wand","Baguette Fantôme","幽魂魔杖","ゴーストワンド","유령 지팡이","幽魂魔杖","Призрачный жезл","Duchowa Różdżka","Varita Fantasma","Varinha Fantasma","Geisterstab","Hayalet Asası","Bacchetta Fantasma"
 ITEM_MGEP_GHOST_TREE,"Ghost Tree","Arbre Fantôme","幽魂树","ゴーストツリー","유령 나무","幽魂樹","Призрачное дерево","Duchowe Drzewo","Árbol Fantasma","Árvore Fantasma","Geisterbaum","Hayalet Ağacı","Albero Fantasma"
+EFFECT_MGEP_GAIN_STAT_WHEN_KILLED_SINGLE_SCALING,"After killing {3} ({4}) enemies, gain {0} points {1} ({2})
+{5}","Après avoir tué {3} ({4}) ennemis, gagnez {0} points {1} ({2})
+{5}","击杀{3} ({4}) 名敌人后获得{0}点{1} ({2})
+{5}","{3}({4})体の敵を倒した後、{0}ポイントの{1}({2})を獲得
+{5}","{3}({4})명의 적 처치 후 {0}점의 {1}({2}) 획득
+{5}","擊殺{3} ({4}) 名敵人後獲得{0}點{1} ({2})
+{5}","После убийства {3} ({4}) врагов получите {0} очков {1} ({2})
+{5}","Po zabiciu {3} ({4}) wrogów zdobądź {0} punktów {1} ({2})
+{5}","Tras matar {3} ({4}) enemigos, gana {0} puntos de {1} ({2})
+{5}","Após matar {3} ({4}) inimigos, ganhe {0} pontos de {1} ({2})
+{5}","Nach dem Töten von {3} ({4}) Gegnern: {0} Punkte {1} ({2})
+{5}","{3} ({4}) düşman öldürdükten sonra {0} puan {1} ({2}) kazan
+{5}","Dopo aver ucciso {3} ({4}) nemici, ottieni {0} punti {1} ({2})
+{5}"
