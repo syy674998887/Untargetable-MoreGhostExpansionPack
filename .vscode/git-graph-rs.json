@@ -1,0 +1,22 @@
+{
+    "issueLinkingConfig": {
+        "issue": "#(\\d+)",
+        "url": "https://github.com/syy674998887/Untargetable-MoreGhostExpansionPack/issues/$1"
+    },
+    "pinnedBranches": [],
+    "pinnedCommits": [],
+    "pullRequestConfig": {
+        "provider": "github",
+        "hostRootUrl": "https://github.com",
+        "sourceRemote": "origin",
+        "sourceOwner": "syy674998887",
+        "sourceRepo": "Untargetable-MoreGhostExpansionPack",
+        "destRemote": "origin",
+        "destOwner": "syy674998887",
+        "destRepo": "Untargetable-MoreGhostExpansionPack",
+        "destProjectId": "",
+        "destBranch": "main",
+        "custom": null
+    },
+    "exportedAt": 1795758126066
+}
