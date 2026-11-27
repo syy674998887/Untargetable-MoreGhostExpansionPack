@@ -8,7 +8,6 @@
 [ext_resource path="res://weapons/melee_sounds/whoosh_swish_high_big_02.wav" type="AudioStream" id=6]
 [ext_resource path="res://mods-unpacked/Untargetable-MoreGhostExpansionPack/content/weapons/melee/ghost_trident/ghost_trident_empty.webp" type="Texture" id=7]
 
-
 [resource]
 script = ExtResource( 1 )
 cooldown = 3
@@ -17,7 +16,7 @@ accuracy = 1.0
 crit_chance = 0.03
 crit_damage = 2.0
 min_range = 0
-max_range = 500
+max_range = 400
 knockback = 0
 knockback_piercing = 0.0
 can_have_positive_knockback = true
@@ -34,6 +33,9 @@ recoil_duration = 0.1
 additional_cooldown_every_x_shots = 3
 additional_cooldown_multiplier = 6.0
 speed_percent_modifier = 0
+can_shoot_without_target = false
 deal_dmg_on_return = false
 attack_type = 0
 alternate_attack_type = false
+attack_duration = 0.0
+animation_speed = 1.0
