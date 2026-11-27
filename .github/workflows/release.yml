@@ -87,7 +87,7 @@ jobs:
           PROJECT="$RUNNER_TEMP/mod-project"; MOD_ROOT="$PROJECT/mods-unpacked/$MOD_DIRECTORY"
           rm -rf "$PROJECT"; mkdir -p "$MOD_ROOT"
           rsync -a --exclude='.git/' --exclude='.github/' --exclude='.godot/' --exclude='.import/' \
-            --exclude='dist/' --exclude='ci/' --exclude='project.godot' --exclude='project.godot.*' \
+            --exclude='.vscode/' --exclude='dist/' --exclude='ci/' --exclude='project.godot' --exclude='project.godot.*' \
             --exclude='export_presets.cfg' --exclude='.DS_Store' --exclude='desktop.ini' \
             --exclude='.gitignore' --exclude='.gitattributes' "$GITHUB_WORKSPACE/" "$MOD_ROOT/"
           cat > "$PROJECT/project.godot" <<'GODOT'
@@ -207,7 +207,7 @@ jobs:
           STAGE="$RUNNER_TEMP/release-stage"; RELEASE="$RUNNER_TEMP/release"; ZIP="$RELEASE/$ZIP_NAME"
           rm -rf "$STAGE" "$RELEASE"; mkdir -p "$STAGE/mods-unpacked/$MOD_DIRECTORY" "$RELEASE"
           rsync -a --exclude='.git/' --exclude='.github/' --exclude='.godot/' --exclude='.import/' \
-            --exclude='project.godot' --exclude='project.godot.*' --exclude='export_presets.cfg' \
+            --exclude='.vscode/' --exclude='project.godot' --exclude='project.godot.*' --exclude='export_presets.cfg' \
             --exclude='.DS_Store' --exclude='desktop.ini' --exclude='.gitignore' --exclude='.gitattributes' \
             "$MOD_ROOT/" "$STAGE/mods-unpacked/$MOD_DIRECTORY/"
           if [[ "$HAS_IMPORT" == 'true' ]]; then
@@ -231,7 +231,7 @@ jobs:
           ZIP="$RUNNER_TEMP/release/$ZIP_NAME"; MANIFEST_PATH="mods-unpacked/$MOD_DIRECTORY/manifest.json"
           unzip -t "$ZIP" >/dev/null; LISTING="$RUNNER_TEMP/zip-list.txt"; unzip -Z1 "$ZIP" > "$LISTING"
           grep -Fxq "$MANIFEST_PATH" "$LISTING" || { echo '::error::manifest.json is missing from the expected ModLoader path.'; exit 1; }
-          if grep -Eq '(^|/)(\.git|\.github|\.godot)(/|$)' "$LISTING"; then echo '::error::Development directories leaked into the release package.'; exit 1; fi
+          if grep -Eq '(^|/)(\.git|\.github|\.godot|\.vscode)(/|$)' "$LISTING"; then echo '::error::Development directories leaked into the release package.'; exit 1; fi
           if grep -Eq '(^|/)(\.gdignore|.*\.md5|.*\.csv\.import)$' "$LISTING"; then echo '::error::Forbidden generated files leaked into the release package.'; exit 1; fi
           if [[ "$HAS_IMPORT" == 'true' ]] && ! grep -Eq '^\.import/[^/]+$|^\.import/.+/.+$' "$LISTING"; then echo '::error::Generated .import cache is missing from the release package.'; exit 1; fi
           unzip -p "$ZIP" "$MANIFEST_PATH" > "$RUNNER_TEMP/release-manifest.json"
