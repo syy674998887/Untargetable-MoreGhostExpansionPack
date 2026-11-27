@@ -11,13 +11,13 @@ var tracking_key_hash: int = Keys.empty_hash
 
 # ══════════════════════════════════════════ Extension ══════════════════════════════════════════ #
 func duplicate(subresources := false) -> Resource:
-	var duplication =.duplicate(subresources)
+	var duplication = .duplicate(subresources)
 	if stat_hash == Keys.empty_hash and stat != "":
-			stat_hash = Keys.generate_hash(stat)
+		stat_hash = Keys.generate_hash(stat)
 	if scaling_stat_hash == Keys.empty_hash and scaling_stat != "":
-			scaling_stat_hash = Keys.generate_hash(scaling_stat)
+		scaling_stat_hash = Keys.generate_hash(scaling_stat)
 	if tracking_key_hash == Keys.empty_hash and tracking_key != "":
-			tracking_key_hash = Keys.generate_hash(tracking_key)
+		tracking_key_hash = Keys.generate_hash(tracking_key)
 
 	duplication.stat_hash = stat_hash
 	duplication.scaling_stat_hash = scaling_stat_hash
@@ -36,30 +36,30 @@ func _generate_hashes() -> void:
 
 func apply(player_index: int) -> void:
 	if key_hash == Keys.empty_hash:
-			return
+		return
 
 	var effects: Dictionary = RunData.get_player_effects(player_index)
 	effects[key_hash].append([
-			value,
-			stat_hash,
-			stat_nb,
-			scaling_stat_hash,
-			scaling_percent,
-			tracking_key_hash,
+		value,
+		stat_hash,
+		stat_nb,
+		scaling_stat_hash,
+		scaling_percent,
+		tracking_key_hash,
 	])
 
 func unapply(player_index: int) -> void:
 	if key_hash == Keys.empty_hash:
-			return
+		return
 
 	var effects: Dictionary = RunData.get_player_effects(player_index)
 	effects[key_hash].erase([
-			value,
-			stat_hash,
-			stat_nb,
-			scaling_stat_hash,
-			scaling_percent,
-			tracking_key_hash,
+		value,
+		stat_hash,
+		stat_nb,
+		scaling_stat_hash,
+		scaling_percent,
+		tracking_key_hash,
 	])
 
 func get_args(player_index: int) -> Array:
@@ -72,22 +72,22 @@ func get_args(player_index: int) -> Array:
 	var tracking_value: int = RunData.ncl_get_effect_tracking_value(tracking_key_hash, player_index)
 	var str_tracking_value: String = ""
 	match tracking_value >= 0:
-			true:
-				str_tracking_value = Utils.ncl_create_tracking("STATS_GAINED", tracking_value)
-			false:
-				str_tracking_value = Utils.ncl_create_tracking("STATS_LOST", -tracking_value)
+		true:
+			str_tracking_value = Utils.ncl_create_tracking("STATS_GAINED", tracking_value)
+		false:
+			str_tracking_value = Utils.ncl_create_tracking("STATS_LOST", -tracking_value)
 
 	return [
-			str(stat_nb),
-			Utils.ncl_get_true_stat_name(stat),
-			stat_icon_text,
-			numer_of_need,
-			scaling_text,
-			str_tracking_value,
+		str(stat_nb),
+		Utils.ncl_get_true_stat_name(stat),
+		stat_icon_text,
+		numer_of_need,
+		scaling_text,
+		str_tracking_value,
 	]
 
 func serialize() -> Dictionary:
-	var serialized =.serialize()
+	var serialized = .serialize()
 	serialized.stat = stat
 	serialized.stat_nb = stat_nb
 	serialized.scaling_stat = scaling_stat
