@@ -1,0 +1,29 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://mods-unpacked/Untargetable-MoreGhostExpansionPack/extensions/effects/ghost_wrench_turret_effect.gd" type="Script" id=2]
+[ext_resource path="res://entities/structures/turret/flame/flame_turret.tscn" type="PackedScene" id=3]
+[ext_resource path="res://items/all/00_base_game/turret_flame/turret_flame_burning_effect.tres" type="Resource" id=4]
+[ext_resource path="res://entities/structures/turret/flame/flame_turret_stats.tres" type="Resource" id=5]
+
+[resource]
+script = ExtResource( 2 )
+key = ""
+text_key = "effect_turret_flame"
+value = 1
+custom_key = ""
+storage_method = 0
+effect_sign = 3
+custom_args = [  ]
+spawn_cooldown = -1
+scene = ExtResource( 3 )
+stats = ExtResource( 5 )
+effects = [ ExtResource( 4 ) ]
+spawn_in_center = -1
+spawn_around_player = -1
+can_be_grouped = true
+is_pet = false
+tracking_key = "item_turret_flame"
+shooting_animation_speed = 1.5
+is_burning = true
+is_spawning = false
+ghost_wrench_tier = 1

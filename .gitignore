@@ -1,2 +1,4 @@
 **/.import/**
 **/dist/**
+*.translation
+*.md5

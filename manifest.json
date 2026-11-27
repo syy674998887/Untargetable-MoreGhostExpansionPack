@@ -1,21 +1,16 @@
 {
-	"name": "MoreGhostExpansionPack",
-	"namespace": "Untargetable",
-	"version_number": "1.1.5",
-	"description": "幽魂武器扩展包 More Ghost Expansion Pack",
-	"website_url": "",
-	"dependencies": [ "Yoko-NewContentLoader" ],
-	"extra": {
-		"godot": {
-			"incompatibilities": [],
-			"authors": [
-				"Flowers",
-				"Mengbao",
-				"Untargetable",
-				"Yoko"
-			],
-			"compatible_mod_loader_version": ["6.3.0"],
-			"compatible_game_version": ["1.2.0.0", "1.2.0.1", "1.2.0.4.beta-1"]
-		}
-	}
+  "name": "MoreGhostExpansionPack",
+  "namespace": "Untargetable",
+  "version_number": "1.2.0",
+  "description": "幽魂武器扩展包修复 More Ghost Weapons Fixed by Untargetable",
+  "website_url": "",
+  "dependencies": ["Yoko-NewContentLoader"],
+  "extra": {
+    "godot": {
+      "incompatibilities": [],
+      "authors": ["Flowers", "Mengbao", "Untargetable", "Yoko"],
+      "compatible_mod_loader_version": ["6.3.0"],
+      "compatible_game_version": ["1.2.0.5"]
+    }
+  }
 }

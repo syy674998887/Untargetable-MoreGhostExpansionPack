@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.en.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.fr.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.zh.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.ja.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.ko.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.zh_TW.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.ru.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.pl.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.es.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.pt.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.de.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.tr.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.it.translation" ]
+
+source_file="res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.csv"
+dest_files=[ "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.en.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.fr.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.zh.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.ja.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.ko.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.zh_TW.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.ru.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.pl.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.es.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.pt.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.de.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.tr.translation", "res://mods-unpacked/Untargetable-MoreGhostExpansionPack/translations/mgep_translation.it.translation" ]
+
+[params]
+
+compress=true
+delimiter=0
