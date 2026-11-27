@@ -260,8 +260,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          gh release create "$TAG" \
-            "$RUNNER_TEMP/release/$ZIP_NAME" \
-            "$RUNNER_TEMP/release/$ZIP_NAME.sha256" \
-            --title "$ZIP_NAME" \
-            --generate-notes
+          ZIP="$RUNNER_TEMP/release/$ZIP_NAME"
+          SHA="$RUNNER_TEMP/release/$ZIP_NAME.sha256"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$ZIP" "$SHA" --clobber
+          else
+            gh release create "$TAG" "$ZIP" "$SHA" \
+              --title "$ZIP_NAME" \
+              --generate-notes
+          fi
